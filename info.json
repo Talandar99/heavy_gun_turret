@@ -1,0 +1,13 @@
+{
+    "name": "heavy_gun_turret",
+    "version": "0.1.0",
+    "title": "Heavy Gun Turret",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age"
+    ],
+    "description": "Bigger, more expensive variant of gun turret that offer higher rate of fire",
+    "space_travel_required": true,
+    "factorio_version": "2.0"
+}
