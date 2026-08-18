@@ -5,7 +5,6 @@ data:extend({
 		icon = "__heavy_gun_turret__/graphics/heavy-gun-turret-technology.png",
 		icon_size = 305,
 		effects = {
-			{ type = "unlock-recipe", recipe = "steel-gear-wheel" },
 			{ type = "unlock-recipe", recipe = "heavy-gun-turret" },
 		},
 		prerequisites = { "metallurgic-science-pack", "gun-turret", "space-science-pack", "military-3" },

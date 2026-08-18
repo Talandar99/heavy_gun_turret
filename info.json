@@ -1,11 +1,13 @@
 {
     "name": "heavy_gun_turret",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "title": "Heavy Gun Turret",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
-        "space-age"
+        "space-age",
+        "(?) Krastorio2",
+        "(?) Krastorio2-spaced-out"
     ],
     "description": "Bigger, more expensive variant of gun turret that offer higher rate of fire",
     "space_travel_required": true,
