@@ -206,7 +206,7 @@ data:extend({
 			{ type = "item", name = "iron-gear-wheel", amount = 20 },
 			{ type = "item", name = "tungsten-plate", amount = 10 },
 			{ type = "item", name = "steel-plate", amount = 30 },
-			{ type = "item", name = "steel-gear-wheel", amount = 45 },
+			{ type = "item", name = "steel-gear-wheel", amount = 25 },
 			{ type = "item", name = "gun-turret", amount = 1 },
 		},
 		results = { { type = "item", name = "heavy-gun-turret", amount = 1 } },
