@@ -2,6 +2,7 @@
 Version: 0.2.0
 Date: 2026-08-18
   Changes:
+    - updated to factorio 2.1
     - added steel gear into recipe and removed plastic bar and engine units
     - recipe now require regular gun turret
     - heavy gun turret can't be crafted by hand anymore, you need assembling machine
