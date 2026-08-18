@@ -2,6 +2,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local rocket_turret_shift = -20
+local item_tints = require("__base__.prototypes.item-tints")
 
 function gun_turret_extension(inputs)
 	return {
@@ -159,13 +160,13 @@ function gun_turret_attack(inputs)
 end
 
 data:extend({
-
+	--- items ---
 	{
 		type = "item",
 		name = "heavy-gun-turret",
 		icon = "__heavy_gun_turret__/graphics/heavy-gun-turret.png",
 		subgroup = "turret",
-		order = "b[turret]-e[rocket-turret]-a[turret]",
+		order = "b[turret]-ab[heavy-gun-turret]",
 		inventory_move_sound = item_sounds.turret_inventory_move,
 		pick_sound = item_sounds.turret_inventory_pickup,
 		drop_sound = item_sounds.turret_inventory_move,
@@ -174,15 +175,39 @@ data:extend({
 		weight = 100 * kg,
 	},
 	{
+		type = "item",
+		name = "steel-gear-wheel",
+		icon = "__heavy_gun_turret__/graphics/steel-gear-wheel.png",
+		subgroup = "intermediate-product",
+		order = "a[basic-intermediates]-ab[steel-gear-wheel]",
+		inventory_move_sound = item_sounds.metal_small_inventory_move,
+		pick_sound = item_sounds.metal_small_inventory_pickup,
+		drop_sound = item_sounds.metal_small_inventory_move,
+		stack_size = 100,
+		random_tint_color = item_tints.iron_rust,
+		weight = 2 * kg,
+	},
+	--- recipes ---
+	{
+		type = "recipe",
+		name = "steel-gear-wheel",
+		categories = { "advanced-crafting" },
+		ingredients = { { type = "item", name = "steel-plate", amount = 2 } },
+		results = { { type = "item", name = "steel-gear-wheel", amount = 1 } },
+		enabled = false,
+		allow_productivity = true,
+	},
+	{
 		type = "recipe",
 		name = "heavy-gun-turret",
-		energy_required = 10,
+		categories = { "advanced-crafting" },
+		energy_required = 16,
 		ingredients = {
 			{ type = "item", name = "iron-gear-wheel", amount = 20 },
 			{ type = "item", name = "tungsten-plate", amount = 10 },
 			{ type = "item", name = "steel-plate", amount = 30 },
-			{ type = "item", name = "engine-unit", amount = 10 },
-			{ type = "item", name = "plastic-bar", amount = 15 },
+			{ type = "item", name = "steel-gear-wheel", amount = 45 },
+			{ type = "item", name = "gun-turret", amount = 1 },
 		},
 		results = { { type = "item", name = "heavy-gun-turret", amount = 1 } },
 		enabled = false,
@@ -354,7 +379,7 @@ data:extend({
 				scale = 5,
 			},
 			rotate = false,
-			orientation_to_variation = false,
+			orientation_to_variation = true,
 		},
 	},
 	--	{

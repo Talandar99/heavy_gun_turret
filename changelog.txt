@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-08-18
+  Changes:
+    - added steel gear into recipe and removed plastic bar and engine units
+    - recipe now require regular gun turret
+    - heavy gun turret now require assembling machine to craft
+  Balancing:
+    - physical projectile damage now scales better than on regular gun turret
+      to make sure heavy gun turret stays relevant even after researching dmg tech
+    - heavy gun turret crafting time increased (10->16)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2026-02-14
   Changes:
