@@ -2,7 +2,7 @@
 Version: 0.2.1
 Date: 2026-08-18
   Changes:
-    - steel gear wheel is now ulocked with steel processing
+    - steel gear wheel is now unlocked with steel processing
     - Krastorio2 compat: if k2 is installed steel gear wheel is named "heavy
       steel gear wheel", to make sure it's not mistaken so easly with Krastorio2 steel gear wheel
 ---------------------------------------------------------------------------------------------------
